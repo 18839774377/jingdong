@@ -1,0 +1,58 @@
+html, body, ul, ol , div, span, p, li, form, table, tr, td, img, input, a, h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*去除移动端特有的点击出现背景颜色*/
+    -webkit-tap-highlight-color: transparent; 
+}
+
+html, body {
+    width: 100%;
+    font-size: 16px;
+    color: #666;
+    font-family: Arial, Helvetica, sans-serif, "Microsoft Yahei";
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+input, button {
+    outline: none;
+    border: none;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: none;
+}
+
+a, img {
+    display: block;
+}
+
+/* 新添加的一些样式 */
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+.clearfix::after {
+    clear: both;
+}
+
+.fl_l {
+    float: left;
+}
+
+.fl_r {
+    float: right;
+}
